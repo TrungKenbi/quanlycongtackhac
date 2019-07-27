@@ -11,16 +11,16 @@
 |
 */
 
-Route::get('/', function () {
-    // Redicrect user if no sign in
-    return redirect('/login');
-});
+Route::get('/', 'HomeController@index')->name('home');
 
 Auth::routes();
 // Logout get method
 Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name('logout');
 
-Route::get('home', 'HomeController@index')->name('home');
+Route::group(['middleware' => ['auth']], function() {
+    Route::resource('roles','RoleController');
+    Route::resource('users','UserController');
+    Route::resource('products','ProductController');
+});
 
-Route::get('list-user', 'Administrator@listUser')->name('listUser');
 
