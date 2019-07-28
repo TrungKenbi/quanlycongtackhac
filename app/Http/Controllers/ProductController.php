@@ -65,7 +65,7 @@ class ProductController extends Controller
 
 
         return redirect()->route('products.index')
-            ->with('success', 'Product created successfully.');
+            ->with('success', 'Tạo công tác thành công !!!');
     }
 
 
@@ -112,7 +112,7 @@ class ProductController extends Controller
 
 
         return redirect()->route('products.index')
-            ->with('success', 'Product updated successfully');
+            ->with('success', 'Sửa công tác thành công !');
     }
 
 
@@ -128,6 +128,6 @@ class ProductController extends Controller
 
 
         return redirect()->route('products.index')
-            ->with('success', 'Product deleted successfully');
+            ->with('success', 'Xóa công tác thành công !');
     }
 }

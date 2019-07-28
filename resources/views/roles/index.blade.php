@@ -17,18 +17,25 @@
         </div>
     @endif
 
-    <table class="table table-bordered">
+    <table class="table table-bordered" style="text-align:center;">
         <tr>
             <th>ID</th>
             <th>Chức vụ</th>
+            <th>Quyền</th>
             <th width="280px">Thao tác</th>
         </tr>
         @foreach ($roles as $key => $role)
             <tr>
-                <td>{{ ++$i }}</td>
+                <td>{{ $role->id }}</td>
                 <td>{{ $role->name }}</td>
                 <td>
-                    <a class="btn btn-info" href="{{ route('roles.show', $role->id) }}">Xem</a>
+                    @if(!empty($permissions[$loop->index]))
+                        @foreach($permissions[$loop->index] as $v)
+                            <label class="label label-success">{{ $v->name }}</label>
+                        @endforeach
+                    @endif
+                </td>
+                <td>
                     @can('role-edit')
                         <a class="btn btn-primary" href="{{ route('roles.edit',$role->id) }}">Sửa</a>
                     @endcan

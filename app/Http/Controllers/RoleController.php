@@ -34,7 +34,14 @@ class RoleController extends Controller
     public function index(Request $request)
     {
         $roles = Role::orderBy('id', 'ASC')->paginate(10);
-        return view('roles.index', compact('roles'))
+        $permissions = [];
+        foreach ($roles as $role)
+        {
+            $permissions[] = Permission::join("role_has_permissions", "role_has_permissions.permission_id", "=", "permissions.id")
+                ->where("role_has_permissions.role_id", $role->id)
+                ->get();
+        }
+        return view('roles.index', compact('roles', 'permissions'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
     }
 
@@ -134,7 +141,7 @@ class RoleController extends Controller
 
 
         return redirect()->route('roles.index')
-            ->with('success', 'Role updated successfully');
+            ->with('success', 'Cập nhật nhật chức vụ thành công !');
     }
 
     /**
