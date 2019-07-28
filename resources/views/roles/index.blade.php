@@ -31,7 +31,7 @@
                 <td>
                     @if(!empty($permissions[$loop->index]))
                         @foreach($permissions[$loop->index] as $v)
-                            <label class="label label-success">{{ $v->name }}</label>
+                            <label class="label label-success">{{ __('permission.' . $v->name) }}</label>
                         @endforeach
                     @endif
                 </td>
