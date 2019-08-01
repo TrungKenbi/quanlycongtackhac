@@ -16,6 +16,12 @@ return [
     'role-create'    => 'Tạo Chức Vụ',
     'role-edit'      => 'Sửa Chức Vụ',
     'role-delete'    => 'Xóa Chức Vụ',
+
+    'permission-list'      => 'Xem Quyền',
+    'permission-create'    => 'Tạo Quyền',
+    'permission-edit'      => 'Sửa Quyền',
+    'permission-delete'    => 'Xóa Quyền',
+
     'product-list'   => 'Xem Công Tác',
     'product-create' => 'Tạo Công Tác',
     'product-edit'   => 'Sửa Công Tác',

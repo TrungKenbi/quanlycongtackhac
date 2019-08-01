@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Sửa Chức Vụ')
+@section('title', 'Sửa Quyền')
 @section('content')
 <div class="container-fluid">
     @if (count($errors) > 0)
@@ -15,23 +15,12 @@
     @endif
 
 
-    {!! Form::model($role, ['method' => 'PATCH','route' => ['roles.update', $role->id]]) !!}
+    {!! Form::model($permission, ['method' => 'PATCH','route' => ['permissions.update', $permission->id]]) !!}
     <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
-                <strong>Chức vụ:</strong>
-                {!! Form::text('name', null, array('placeholder' => 'Chức vụ','class' => 'form-control')) !!}
-            </div>
-        </div>
-        <div class="col-xs-12 col-sm-12 col-md-12">
-            <div class="form-group">
                 <strong>Quyền:</strong>
-                <br/>
-                @foreach($permission as $value)
-                    <label>{{ Form::checkbox('permission[]', $value->id, in_array($value->id, $rolePermissions) ? true : false, array('class' => 'name')) }}
-                        {{ __('permission.' . $value->name) }}</label>
-                    <br/>
-                @endforeach
+                {!! Form::text('name', null, array('placeholder' => 'Key-Permission','class' => 'form-control')) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

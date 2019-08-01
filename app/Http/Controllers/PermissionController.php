@@ -5,13 +5,13 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use App\Models\User;
 use Spatie\Permission\Models\Role;
+use Spatie\Permission\Models\Permission;
 use DB;
-use Hash;
+use Carbon\Carbon;
 
 
-class UserController extends Controller
+class PermissionController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -26,6 +26,7 @@ class UserController extends Controller
         $this->middleware('permission:permission-delete', ['only' => ['destroy']]);
     }
 
+
     /**
      * Display a listing of the resource.
      *
@@ -33,8 +34,8 @@ class UserController extends Controller
      */
     public function index(Request $request)
     {
-        $data = User::orderBy('id', 'DESC')->paginate(10);
-        return view('users.index', compact('data'))
+        $permissions = Permission::orderBy('id', 'ASC')->paginate(8);
+        return view('permissions.index', compact('permissions'))
             ->with('i', ($request->input('page', 1) - 1) * 5);
     }
 
@@ -46,8 +47,8 @@ class UserController extends Controller
      */
     public function create()
     {
-        $roles = Role::pluck('name', 'name')->all();
-        return view('users.create', compact('roles'));
+        //$permission = Permission::get();
+        return view('permissions.create');
     }
 
 
@@ -60,25 +61,14 @@ class UserController extends Controller
     public function store(Request $request)
     {
         $this->validate($request, [
-            'name' => 'required',
-            'email' => 'required|email|unique:users,email',
-            'password' => 'required|same:confirm-password',
-            'roles' => 'required'
+            'name' => 'required|unique:permissions,name'
         ]);
 
+        $permission = Permission::create(['name' => $request->input('name')]);
 
-        $input = $request->all();
-        $input['password'] = Hash::make($input['password']);
-
-
-        $user = User::create($input);
-        $user->assignRole($request->input('roles'));
-
-
-        return redirect()->route('users.index')
-            ->with('success', 'User created successfully');
+        return redirect()->route('permissions.index')
+            ->with('success', 'Tạo quyền thành công !');
     }
-
 
     /**
      * Display the specified resource.
@@ -88,8 +78,8 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $user = User::find($id);
-        return view('users.show', compact('user'));
+        $permission = Permission::find($id);
+        return view('permissions.show', compact('permission'));
     }
 
 
@@ -101,12 +91,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $user = User::find($id);
-        $roles = Role::pluck('name', 'name')->all();
-        $userRole = $user->roles->pluck('name', 'name')->all();
-
-
-        return view('users.edit', compact('user', 'roles', 'userRole'));
+        $permission = Permission::find($id);
+        return view('permissions.edit', compact('permission'));
     }
 
 
@@ -121,32 +107,15 @@ class UserController extends Controller
     {
         $this->validate($request, [
             'name' => 'required',
-            'email' => 'required|email|unique:users,email,' . $id,
-            'password' => 'same:confirm-password',
-            'roles' => 'required'
         ]);
 
+        $permission = Permission::find($id);
+        $permission->name = $request->input('name');
+        $permission->save();
 
-        $input = $request->all();
-        if (!empty($input['password'])) {
-            $input['password'] = Hash::make($input['password']);
-        } else {
-            $input = array_except($input, array('password'));
-        }
-
-
-        $user = User::find($id);
-        $user->update($input);
-        DB::table('model_has_roles')->where('model_id', $id)->delete();
-
-
-        $user->assignRole($request->input('roles'));
-
-
-        return redirect()->route('users.index')
-            ->with('success', 'Tạo người dùng thành công !');
+        return redirect()->route('permissions.index')
+            ->with('success', 'Cập nhật nhật quyền thành công !');
     }
-
 
     /**
      * Remove the specified resource from storage.
@@ -156,8 +125,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        User::find($id)->delete();
-        return redirect()->route('users.index')
-            ->with('success', 'Xóa người dùng thành công !');
+        DB::table("permissions")->where('id', $id)->delete();
+        return redirect()->route('permissions.index')
+            ->with('success', 'Xóa quyền thành công !');
     }
 }

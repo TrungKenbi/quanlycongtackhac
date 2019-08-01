@@ -4,7 +4,7 @@
         <!-- Sidebar navigation-->
         <nav class="sidebar-nav">
             <ul id="sidebarnav" class="p-t-30">
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('home') }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Trang Chính</span></a></li>
+                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('home') }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Bảng Điều Khiển</span></a></li>
                 @can('product-list')
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('products.index') }}" aria-expanded="false"><i class="mdi mdi-note-multiple-outline"></i><span class="hide-menu">Quản Lý Công Tác</span></a></li>
                 @endcan
@@ -13,6 +13,12 @@
                     <ul aria-expanded="false" class="collapse  first-level">
                         <li class="sidebar-item"><a href="{{ route('users.index') }}" class="sidebar-link"><i class="mdi mdi-account-multiple-outline"></i><span class="hide-menu">Quản Lý Người Dùng</span></a></li>
                         <li class="sidebar-item"><a href="{{ route('roles.index') }}" class="sidebar-link"><i class="mdi mdi-account-settings-variant"></i><span class="hide-menu">Quản Lý Chức Vụ</span></a></li>
+                        @if(auth()->user()->can('permission-list')   ||
+                            auth()->user()->can('permission-create') ||
+                            auth()->user()->can('permission-edit')   ||
+                            auth()->user()->can('permission-delete'))
+                        <li class="sidebar-item"><a href="{{ route('permissions.index') }}" class="sidebar-link"><i class="mdi mdi-key"></i><span class="hide-menu">Quản Lý Quyền Hạn</span></a></li>
+                        @endif
                     </ul>
                 </li>
                 @endrole

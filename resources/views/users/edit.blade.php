@@ -3,15 +3,6 @@
 @section('title', 'Chỉnh Sửa Người Dùng')
 @section('content')
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-lg-12 margin-tb">
-            <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('users.index') }}"> Back</a>
-            </div>
-        </div>
-    </div>
-
-
     @if (count($errors) > 0)
         <div class="alert alert-danger">
             <strong>Có lỗi!</strong> Dữ liệu nhập không chính xác !<br><br>

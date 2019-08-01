@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Trang Chính')
+@section('title', 'Bảng Điều Khiển')
 
 @push('scripts')
 <script src="/assets/libs/flot/excanvas.js"></script>

@@ -19,6 +19,7 @@ Route::get('logout', '\App\Http\Controllers\Auth\LoginController@logout')->name(
 
 Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles','RoleController');
+    Route::resource('permissions','PermissionController');
     Route::resource('users','UserController');
     Route::resource('products','ProductController');
 });
