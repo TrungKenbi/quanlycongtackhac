@@ -16,7 +16,7 @@
     @endif
 
 
-    <form action="{{ route('products.update',$product->id) }}" method="POST">
+    <form action="{{ route('otherworks.update', $otherwork->id) }}" method="POST">
         @csrf
         @method('PUT')
 
@@ -25,13 +25,13 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Tên Công Tác:</strong>
-                    <input type="text" name="name" value="{{ $product->name }}" class="form-control" placeholder="Name">
+                    <input type="text" name="name" value="{{ $otherwork->name }}" class="form-control" placeholder="Tên Công Tác">
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Mô tả chi tiết:</strong>
-                    <textarea class="form-control" style="height:150px" name="detail" placeholder="Detail">{{ $product->detail }}</textarea>
+                    <textarea class="form-control" id="editor" name="detail" rows="10">{{ $otherwork->detail }}</textarea>
                 </div>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
@@ -41,3 +41,27 @@
     </form>
 </div>
 @endsection
+
+@push('styles')
+<style>
+    .ck-editor__editable {
+        min-height: 400px;
+    }
+</style>
+@endpush
+
+@push('scripts')
+<script src="/assets/libs/ckeditor5-build-classic/ckeditor.js"></script>
+<script>
+    ClassicEditor
+        .create( document.querySelector( '#editor' ), {
+            // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+        } )
+        .then( editor => {
+            window.editor = editor;
+        } )
+        .catch( err => {
+            console.error( err.stack );
+        } );
+</script>
+@endpush

@@ -5,8 +5,8 @@
         <nav class="sidebar-nav">
             <ul id="sidebarnav" class="p-t-30">
                 <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('home') }}" aria-expanded="false"><i class="mdi mdi-view-dashboard"></i><span class="hide-menu">Bảng Điều Khiển</span></a></li>
-                @can('product-list')
-                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('products.index') }}" aria-expanded="false"><i class="mdi mdi-note-multiple-outline"></i><span class="hide-menu">Quản Lý Công Tác</span></a></li>
+                @can('otherwork-list')
+                <li class="sidebar-item"> <a class="sidebar-link waves-effect waves-dark sidebar-link" href="{{ route('otherworks.index') }}" aria-expanded="false"><i class="mdi mdi-note-multiple-outline"></i><span class="hide-menu">Quản Lý Công Tác Khác</span></a></li>
                 @endcan
                 @role('Admin')
                 <li class="sidebar-item"> <a class="sidebar-link has-arrow waves-effect waves-dark" href="javascript:void(0)" aria-expanded="false"><i class="mdi mdi-fingerprint"></i><span class="hide-menu">Quản Trị Hệ Thống</span></a>

@@ -22,8 +22,8 @@ return [
     'permission-edit'      => 'Sửa Quyền',
     'permission-delete'    => 'Xóa Quyền',
 
-    'product-list'   => 'Xem Công Tác',
-    'product-create' => 'Tạo Công Tác',
-    'product-edit'   => 'Sửa Công Tác',
-    'product-delete' => 'Xóa Công Tác',
+    'otherwork-list'   => 'Xem Công Tác Khác',
+    'otherwork-create' => 'Tạo Công Tác Khác',
+    'otherwork-edit'   => 'Sửa Công Tác Khác',
+    'otherwork-delete' => 'Xóa Công Tác Khác',
 ];

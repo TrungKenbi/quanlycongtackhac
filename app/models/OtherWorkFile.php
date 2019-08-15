@@ -1,10 +1,13 @@
 <?php
+/**
+ * Copyright (c) 2019 TrungKenbi
+ */
 
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Product extends Model
+class OtherWorkFile extends Model
 {
     /**
      * The attributes that are mass assignable.
@@ -12,6 +15,6 @@ class Product extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'detail'
+        'other_work_id', 'filename'
     ];
 }
