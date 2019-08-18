@@ -16,8 +16,10 @@ class CreateOtherWorkFilesTable extends Migration
         Schema::create('other_work_files', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('other_work_id')->unsigned();
-            $table->foreign('other_work_id')->references('id')->on('other_works');
+            $table->foreign('other_work_id')->references('id')->on('other_works')->onDelete('cascade');
             $table->string('filename');
+            $table->string('display_name')->default('');
+            $table->string('type', 10)->default('photo');
             $table->timestamps();
         });
     }

@@ -2,88 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1425b802-6f41-4b73-861f-a0638bc96b62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/models/OtherWorkFile.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_08_12_095916_create_other_work_files_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/LICENSE.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/ckeditor.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/ckeditor.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/sample/css/sample.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/sample/img/bg.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/sample/img/github.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/sample/img/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/sample/img/umbrellas.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/af.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/de-ch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/en-au.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/eo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/gu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/km.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/kn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ku.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ne.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/no.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/oc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/pt-br.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/si.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/sq.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/sr-latn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/tt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/ug.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/zh-cn.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/zh.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ProductController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/Product.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OtherWork.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_27_140833_create_products_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_27_140833_create_other_works_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/vi/permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vi/permission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/products/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/OtherWork.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OtherWork.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/OtherWorkFile.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OtherWorkFile.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_08_12_095916_create_other_work_files_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_08_12_095916_create_other_work_files_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/show.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -273,13 +198,13 @@
   <component name="RunAnythingCache">
     <option name="myCommands">
       <command value="artisan make:command PermissionController" />
-      <command value="artisan serve" />
       <command value="php artisan make:model OtherWorkFile -m" />
       <command value="artisan make:model OtherWorkFile -m" />
       <command value="artisan migrate:" />
       <command value="artisan migrate" />
       <command value="artisan migrate renametable" />
       <command value="artisan migrate rename_table" />
+      <command value="artisan serve" />
       <command value="artisan migrate:fresh --seed" />
     </option>
   </component>
@@ -343,6 +268,9 @@
       <workItem from="1564935823074" duration="360000" />
       <workItem from="1565495737640" duration="10791000" />
       <workItem from="1565600954040" duration="5690000" />
+      <workItem from="1565846032467" duration="1258000" />
+      <workItem from="1566024523966" duration="58000" />
+      <workItem from="1566136349220" duration="10301000" />
     </task>
     <servers />
   </component>

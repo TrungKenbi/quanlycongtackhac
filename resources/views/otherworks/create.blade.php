@@ -35,7 +35,7 @@
                 <h3>Văn Bản</h3>
                 <div class="input-group mt-3">
                     <div class="custom-file">
-                        <input id="inputGroupFile02" name="vanbans[]" type="file" multiple class="custom-file-input">
+                        <input id="inputGroupFile02" name="documents[]" type="file" multiple class="custom-file-input">
                         <label class="custom-file-label" for="inputGroupFile02">Chọn file văn bản minh chứng</label>
                     </div>
                 </div>
@@ -45,7 +45,7 @@
                 <h3>Hình Ảnh</h3>
                 <div class="input-group mt-3">
                     <div class="custom-file">
-                        <input id="inputGroupFile02" type="file" multiple class="custom-file-input">
+                        <input id="inputGroupFile02" name="photos[]" type="file" multiple class="custom-file-input">
                         <label class="custom-file-label" for="inputGroupFile02">Chọn file hình ảnh minh chứng</label>
                     </div>
                 </div>

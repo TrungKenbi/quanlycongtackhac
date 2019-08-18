@@ -15,6 +15,6 @@ class OtherWorkFile extends Model
      * @var array
      */
     protected $fillable = [
-        'other_work_id', 'filename'
+        'other_work_id', 'filename', 'type', 'display_name'
     ];
 }

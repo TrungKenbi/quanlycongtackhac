@@ -7,6 +7,7 @@ namespace App\Http\Controllers;
 use App\Models\OtherWork;
 use App\Models\OtherWorkFile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 
 class OtherWorkController extends Controller
@@ -59,44 +60,35 @@ class OtherWorkController extends Controller
         request()->validate([
             'name' => 'required',
             'detail' => 'required',
-            'vanbans' => 'required'
+            'documents' => 'array',
+            'documents.*' => 'file|max:10000|mimes:txt,pdf,docx,doc,docm,pptx,pptm,xlsx,xlsm',
+            'photos' => 'array',
+            'photos.*' => 'image'
         ]);
 
-        // kiểm tra có files sẽ xử lý
-        if ($request->hasFile('vanbans')) {
-            $allowedfileExtension = ['jpg', 'png'];
-            $files = $request->file('vanbans');
-            // flag xem có thực hiện lưu DB không. Mặc định là có
-            $exe_flg = true;
-            // kiểm tra tất cả các files xem có đuôi mở rộng đúng không
-            foreach ($files as $file) {
-                $extension = $file->getClientOriginalExtension();
-                $check = in_array($extension, $allowedfileExtension);
-                if (!$check) {
-                    // nếu có file nào không đúng đuôi mở rộng thì đổi flag thành false
-                    $exe_flg = false;
-                    break;
-                }
-            }
-            // nếu không có file nào vi phạm validate thì tiến hành lưu DB
-            if ($exe_flg) {
-                // lưu product
-                $otherwork = OtherWork::create($request->only(['name', 'detail']));
-                // duyệt từng ảnh và thực hiện lưu
-                foreach ($request->vanbans as $vanban) {
-                    $filename = $vanban->store('vanban');
-                    OtherWorkFile::create([
-                        'other_work_id' => $otherwork->id,
-                        'filename' => $filename
-                    ]);
-                }
-                return redirect()->route('otherworks.index')
-                    ->with('success', 'Tạo công tác thành công !!!');
-            } else {
-                return redirect()->route('otherworks.index')
-                    ->withErrors('File upload không hợp lệ');
-            }
+        $otherwork = OtherWork::create($request->only(['name', 'detail']));
+
+        foreach ($request->documents as $document) {
+            $filename = $document->store('documents', 'public');
+            OtherWorkFile::create([
+                'other_work_id' => $otherwork->id,
+                'filename' => $filename,
+                'display_name' => $document->getClientOriginalName(),
+                'type' => 'document'
+            ]);
         }
+        foreach ($request->photos as $photo) {
+            $filename = $photo->store('photos', 'public');
+            OtherWorkFile::create([
+                'other_work_id' => $otherwork->id,
+                'filename' => $filename,
+                'display_name' => $photo->getClientOriginalName(),
+                'type' => 'photo'
+            ]);
+        }
+
+        return redirect()->route('otherworks.index')
+            ->with('success', 'Tạo công tác thành công !!!');
     }
 
 
@@ -108,7 +100,18 @@ class OtherWorkController extends Controller
      */
     public function show(OtherWork $otherwork)
     {
-        return view('otherworks.show', compact('otherwork'));
+        $documents = $otherwork->getDocuments;
+        $photos = $otherwork->getPhotos;
+        return view('otherworks.show', compact('otherwork', 'documents', 'photos'));
+    }
+
+    public function downloadFile($id = 0)
+    {
+        if ($id)
+            return;
+        $file = OtherWorkFile::find($id);
+        if ($file != null)
+        return Storage::download('public/documents/');
     }
 
 

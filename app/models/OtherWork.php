@@ -14,4 +14,22 @@ class OtherWork extends Model
     protected $fillable = [
         'name', 'detail'
     ];
+
+    /*
+     * Lấy tài liệu của công tác
+     */
+    public function getDocuments()
+    {
+        return $this->hasMany('App\Models\OtherWorkFile')
+            ->where('other_work_files.type', '=', 'document');
+    }
+
+    /*
+     * Lấy hình ảnh của công tác
+     */
+    public function getPhotos()
+    {
+        return $this->hasMany('App\Models\OtherWorkFile')
+            ->where('other_work_files.type', '=', 'photo');
+    }
 }
