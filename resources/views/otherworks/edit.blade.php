@@ -52,10 +52,17 @@
 
 @push('scripts')
 <script src="/assets/libs/ckeditor5-build-classic/ckeditor.js"></script>
+<script type="text/javascript" src="/js/ckfinder/ckfinder.js"></script>
+<script>CKFinder.config( { connectorPath: '/ckfinder/connector' } );</script>
 <script>
     ClassicEditor
         .create( document.querySelector( '#editor' ), {
+            plugins: [ CKFinder ],
             // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
+            ckfinder: {
+                // Upload the images to the server using the CKFinder QuickUpload command.
+                uploadUrl: '/ckfinder/connector?command=QuickUpload&type=Images&responseType=json'
+            }
         } )
         .then( editor => {
             window.editor = editor;
@@ -65,3 +72,5 @@
         } );
 </script>
 @endpush
+
+

@@ -3,7 +3,7 @@
 @section('title', 'Xem Công Tác')
 @section('content')
 <div class="container-fluid">
-    <h1 class="text-center">{{ $otherwork->name }}</h1>
+    <h3 class="text-center">{{ $otherwork->name }}</h3>
     <div class="col-xs-12 col-sm-12 col-md-12">
         {!! $otherwork->detail !!}
 

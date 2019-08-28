@@ -22,6 +22,11 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('permissions','PermissionController');
     Route::resource('users','UserController');
     Route::resource('otherworks','OtherWorkController');
-});
 
+
+    Route::get('files', function () {
+        return view('otherworks.file');
+    });
+    Route::get('/search/name', 'UserController@searchByName');
+});
 

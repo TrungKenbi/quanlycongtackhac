@@ -160,4 +160,11 @@ class UserController extends Controller
         return redirect()->route('users.index')
             ->with('success', 'Xóa người dùng thành công !');
     }
+
+
+    public function searchByName(Request $request)
+    {
+        $students = User::where('name', 'like', '%' . $request->value . '%')->get();
+        return response()->json($students);
+    }
 }

@@ -3,7 +3,7 @@
 
 namespace App\Http\Controllers;
 
-
+use App\Authorizable;
 use App\Models\OtherWork;
 use App\Models\OtherWorkFile;
 use Illuminate\Http\Request;
@@ -12,6 +12,7 @@ use Illuminate\Support\Facades\Storage;
 
 class OtherWorkController extends Controller
 {
+    //use Authorizable;
     /**
      * Display a listing of the resource.
      *
@@ -63,28 +64,35 @@ class OtherWorkController extends Controller
             'documents' => 'array',
             'documents.*' => 'file|max:10000|mimes:txt,pdf,docx,doc,docm,pptx,pptm,xlsx,xlsm',
             'photos' => 'array',
-            'photos.*' => 'image'
+            'photos.*' => 'image',
+            'users' => 'required',
+            //'users.*' => 'numeric|min:1|exists:users,id',
         ]);
 
         $otherwork = OtherWork::create($request->only(['name', 'detail']));
 
-        foreach ($request->documents as $document) {
-            $filename = $document->store('documents', 'public');
-            OtherWorkFile::create([
-                'other_work_id' => $otherwork->id,
-                'filename' => $filename,
-                'display_name' => $document->getClientOriginalName(),
-                'type' => 'document'
-            ]);
+        if ($request->has('documents')) {
+            foreach ($request->documents as $document) {
+                $filename = $document->store('documents', 'public');
+                OtherWorkFile::create([
+                    'other_work_id' => $otherwork->id,
+                    'filename' => $filename,
+                    'display_name' => $document->getClientOriginalName(),
+                    'type' => 'document'
+                ]);
+            }
         }
-        foreach ($request->photos as $photo) {
-            $filename = $photo->store('photos', 'public');
-            OtherWorkFile::create([
-                'other_work_id' => $otherwork->id,
-                'filename' => $filename,
-                'display_name' => $photo->getClientOriginalName(),
-                'type' => 'photo'
-            ]);
+
+        if ($request->has('photos')) {
+            foreach ($request->photos as $photo) {
+                $filename = $photo->store('photos', 'public');
+                OtherWorkFile::create([
+                    'other_work_id' => $otherwork->id,
+                    'filename' => $filename,
+                    'display_name' => $photo->getClientOriginalName(),
+                    'type' => 'photo'
+                ]);
+            }
         }
 
         return redirect()->route('otherworks.index')
