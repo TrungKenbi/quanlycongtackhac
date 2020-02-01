@@ -1,0 +1,6 @@
+# Prerun
+artisan migrate:fresh --seed
+artisan storage:link
+artisan config:cache
+# Run
+artisan serve

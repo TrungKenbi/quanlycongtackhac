@@ -10,7 +10,7 @@
         <br/><br/><br/><br/>
         <h4>Văn bản</h4>
         @foreach($documents as $document)
-            <a href="#">{{ $document->display_name }}</a> <br/>
+            <a href="{{ route('downloadFile', $document->id)  }}">{{ $document->display_name }}</a> <br/>
         @endforeach
         <h4>Hình ảnh</h4>
         @foreach($photos as $photo)

@@ -12,8 +12,19 @@ class OtherWork extends Model
      * @var array
      */
     protected $fillable = [
-        'name', 'detail'
+        'user_id', 'name', 'detail'
     ];
+
+    /**
+     * Scope a query to only include popular users.
+     *
+     * @param  \Illuminate\Database\Eloquent\Builder  $query
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeOwner($query)
+    {
+        return $query->where('user_id', \Auth::id());
+    }
 
     /*
      * Lấy tài liệu của công tác

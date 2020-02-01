@@ -23,6 +23,9 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('users','UserController');
     Route::resource('otherworks','OtherWorkController');
 
+    Route::get('/otherworks/download/{id}', 'OtherWorkController@downloadFile')
+        ->name('downloadFile');
+
 
     Route::get('files', function () {
         return view('otherworks.file');

@@ -7,6 +7,7 @@ use App\Authorizable;
 use App\Models\OtherWork;
 use App\Models\OtherWorkFile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 
@@ -26,6 +27,11 @@ class OtherWorkController extends Controller
         $this->middleware('permission:otherwork-delete', ['only' => ['destroy']]);
     }
 
+    private function checkOwnerOrAdmin($otherwork)
+    {
+        return (!Auth::user()->hasRole(['Admin   ', 'Manager']) && $otherwork->user_id != \Auth::id());
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -33,7 +39,7 @@ class OtherWorkController extends Controller
      */
     public function index()
     {
-        $otherworks = OtherWork::latest()->paginate(5);
+        $otherworks = OtherWork::where('user_id', \Auth::id())->latest()->paginate(5);
         return view('otherworks.index', compact('otherworks'))
             ->with('i', (request()->input('page', 1) - 1) * 5);
     }
@@ -69,7 +75,10 @@ class OtherWorkController extends Controller
             //'users.*' => 'numeric|min:1|exists:users,id',
         ]);
 
-        $otherwork = OtherWork::create($request->only(['name', 'detail']));
+        $data = $request->only(['name', 'detail']);
+        $data['user_id'] = \Auth::id();
+
+        $otherwork = OtherWork::create($data);
 
         if ($request->has('documents')) {
             foreach ($request->documents as $document) {
@@ -108,6 +117,8 @@ class OtherWorkController extends Controller
      */
     public function show(OtherWork $otherwork)
     {
+        if ($this->checkOwnerOrAdmin($otherwork))
+            return redirect('otherworks');
         $documents = $otherwork->getDocuments;
         $photos = $otherwork->getPhotos;
         return view('otherworks.show', compact('otherwork', 'documents', 'photos'));
@@ -115,11 +126,14 @@ class OtherWorkController extends Controller
 
     public function downloadFile($id = 0)
     {
-        if ($id)
-            return;
         $file = OtherWorkFile::find($id);
-        if ($file != null)
-        return Storage::download('public/documents/');
+        if (isset($file->id) && $file->filename != null)
+        {
+            $otherwork = OtherWork::find($file->id);
+            if ($otherwork->user_id == \Auth::id())
+                return Storage::download('public/' . $file->filename, $file->display_name);
+        }
+        return "File not found !!!";
     }
 
 
