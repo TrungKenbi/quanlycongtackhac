@@ -12,8 +12,14 @@ class OtherWork extends Model
      * @var array
      */
     protected $fillable = [
-        'user_id', 'name', 'detail'
+        'user_id',
+        'name',
+        'detail',
+        'norm',
+        'count',
     ];
+
+    protected $dates = ['created_at', 'updated_at'];
 
     /**
      * Scope a query to only include popular users.

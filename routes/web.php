@@ -21,15 +21,28 @@ Route::group(['middleware' => ['auth']], function() {
     Route::resource('roles','RoleController');
     Route::resource('permissions','PermissionController');
     Route::resource('users','UserController');
+
+    Route::get('/otherworks/export', 'OtherWorkController@export')
+        ->name('otherworks.export');
+    Route::get('/otherworks/download/{id}', 'OtherWorkController@downloadFile')
+        ->name('otherworks.downloadFile')
+        ->where('id', '[0-9]+');
+
     Route::resource('otherworks','OtherWorkController');
 
-    Route::get('/otherworks/download/{id}', 'OtherWorkController@downloadFile')
-        ->name('downloadFile');
+    Route::group(['prefix' => 'otherworks'], function () {
+
+    });
 
 
+
+    /*
     Route::get('files', function () {
         return view('otherworks.file');
     });
+
     Route::get('/search/name', 'UserController@searchByName');
+
+    */
 });
 

@@ -182,6 +182,9 @@ return [
         Spatie\Permission\PermissionServiceProvider::class,
         Collective\Html\HtmlServiceProvider::class,
 
+        //Export Excel
+        Maatwebsite\Excel\ExcelServiceProvider::class,
+
     ],
 
     /*

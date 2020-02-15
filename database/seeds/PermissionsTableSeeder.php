@@ -26,7 +26,8 @@ class PermissionTableSeeder extends Seeder
             'otherwork-list',
             'otherwork-create',
             'otherwork-edit',
-            'otherwork-delete'
+            'otherwork-delete',
+            'otherwork-export'
         ];
 
 

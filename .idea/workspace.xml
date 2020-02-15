@@ -2,29 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1425b802-6f41-4b73-861f-a0638bc96b62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/mysql/my.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/nginx/conf.d/app.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.docker/php/local.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Setup.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mail/NewUserNotification.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Tool_based_on_Symfony_Console_7_17_19_5_08_PM_artisan.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exports/OtherWorksExport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/excel.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/exports/otherworks.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/535c9733-24d7-488b-b17c-f42dc07e1b96.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/535c9733-24d7-488b-b17c-f42dc07e1b96.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/quanlycongtackhac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quanlycongtackhac.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/OtherWork.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OtherWork.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_27_140833_create_other_works_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_27_140833_create_other_works_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/CreateAdminUserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/CreateAdminUserSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/assets/images/users/1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/vi.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/assets/libs/ckeditor5-build-classic/translations/vi.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/lang/vi/permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vi/permission.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/otherworks/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/show.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/storage/framework/cache/data/.gitignore" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,21 +50,7 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="@localhost" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="quanlykhac@localhost" type="feb32156:DbDataSourceImpl" />
-      </path>
-    </expand>
+    <expand />
     <select />
   </component>
   <component name="FrameworkCommandLineHistory">
@@ -96,6 +84,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpServers">
     <servers>
@@ -208,6 +199,10 @@
       <path value="$PROJECT_DIR$/vendor/spatie/flysystem-dropbox" />
       <path value="$PROJECT_DIR$/vendor/ckfinder/ckfinder-laravel-package" />
       <path value="$PROJECT_DIR$/vendor/aws/aws-sdk-php" />
+      <path value="$PROJECT_DIR$/vendor/phpoffice/phpspreadsheet" />
+      <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
+      <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Oo5BBACyU8TOXvlHPceNIgRHeQ" />
@@ -228,7 +223,7 @@
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/artisan" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TrungKenbiGame" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -323,7 +318,9 @@
       <workItem from="1566982365179" duration="823000" />
       <workItem from="1580001060154" duration="9713000" />
       <workItem from="1580224822949" duration="600000" />
-      <workItem from="1580544342063" duration="698000" />
+      <workItem from="1580544342063" duration="699000" />
+      <workItem from="1580740206286" duration="162000" />
+      <workItem from="1581667740131" duration="21240000" />
     </task>
     <servers />
   </component>
@@ -351,34 +348,34 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580544389696" />
-    <state x="822" y="145" key="FileChooserDialogImpl" timestamp="1580002096549">
+    <state x="822" y="145" key="FileChooserDialogImpl" timestamp="1580740366565">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="822" y="145" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580002096549" />
+    <state x="822" y="145" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580740366565" />
     <state x="543" y="263" key="FrameworkEditDialogDimensionKey" timestamp="1580002023302">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="543" y="263" key="FrameworkEditDialogDimensionKey/0.0.1366.728@0.0.1366.728" timestamp="1580002023302" />
-    <state width="1323" height="482" key="GridCell.Tab.0.bottom" timestamp="1580016704234">
+    <state width="1323" height="482" key="GridCell.Tab.0.bottom" timestamp="1581707912632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="482" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1580016704234" />
-    <state width="1323" height="482" key="GridCell.Tab.0.center" timestamp="1580016704234">
+    <state width="1323" height="482" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1581707912632" />
+    <state width="1323" height="482" key="GridCell.Tab.0.center" timestamp="1581707912632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="482" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1580016704234" />
-    <state width="1323" height="482" key="GridCell.Tab.0.left" timestamp="1580016704234">
+    <state width="1323" height="482" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1581707912632" />
+    <state width="1323" height="482" key="GridCell.Tab.0.left" timestamp="1581707912632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="482" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1580016704234" />
-    <state width="1323" height="482" key="GridCell.Tab.0.right" timestamp="1580016704234">
+    <state width="1323" height="482" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1581707912632" />
+    <state width="1323" height="482" key="GridCell.Tab.0.right" timestamp="1581707912632">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="1323" height="482" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1580016704234" />
-    <state width="262" height="457" key="HiddenNamespacesPopup" timestamp="1580544437604">
+    <state width="1323" height="482" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1581707912632" />
+    <state width="262" height="457" key="HiddenNamespacesPopup" timestamp="1580740346735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state width="262" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1580544437604" />
+    <state width="262" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1580740346735" />
     <state x="186" y="10" key="SettingsEditor" timestamp="1580002106383">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -391,9 +388,13 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580001062261" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1580007004563">
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1581699470342">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1580007004563" />
+    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1581699470342" />
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581675834862">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1581675834862" />
   </component>
 </project>

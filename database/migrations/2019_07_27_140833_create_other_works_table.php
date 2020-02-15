@@ -20,6 +20,8 @@ class CreateOtherWorksTable extends Migration
             $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->string('name');
             $table->text('detail');
+            $table->integer('norm')->default(0); // Định mức
+            $table->integer('count')->default(0); // Số lượng
             $table->timestamps();
         });
     }

@@ -22,41 +22,47 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <h3>Tên Công Tác</h3>
-                    <input type="text" name="name" class="form-control" placeholder="Tên Công Tác">
+                    <input type="text" name="name" class="form-control" placeholder="Tên Công Tác" value="{{ old('name') }}">
                 </div>
             </div>
+
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <h3>Nội dung công tác</h3>
-                    <textarea class="form-control" style="height:150px" name="detail" id="editor"></textarea>
+                    <textarea class="form-control" style="height:150px" name="detail" id="editor">{{ old('detail') }}</textarea>
                 </div>
             </div>
-            <div class="col-xs-12 col-sm-12 col-md-12" id="div_invite">
-                <div class="form-group">
-                    <h3>Người Tham Gia</h3>
-                    <ul id="list-invate">
-                    </ul>
-                    <input type="text" class="form-control search-invite" placeholder="Người tham gia">
-                    <input type="hidden" name="users[]" id="invite" value="">
 
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    <h3>Định mức theo quy định</h3>
+                    <input type="text" name="norm" class="form-control" placeholder="Định mức theo quy định" value="{{ old('norm') }}">
                 </div>
             </div>
+
+            <div class="col-xs-6 col-sm-6 col-md-6">
+                <div class="form-group">
+                    <h3>Số lượng</h3>
+                    <input type="text" name="count" class="form-control" placeholder="Số lượng" value="{{ old('count') }}">
+                </div>
+            </div>
+
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <h3>Văn Bản</h3>
+                <h3>Tài liệu minh chứng</h3>
                 <div class="input-group mt-3">
                     <div class="custom-file">
-                        <input id="inputGroupFile02" name="documents[]" type="file" multiple class="custom-file-input">
-                        <label class="custom-file-label" for="inputGroupFile02">Chọn file văn bản minh chứng</label>
+                        <input id="inputGroupFile01" name="documents[]" type="file" multiple class="custom-file-input">
+                        <label class="custom-file-label" for="inputGroupFile01">Chọn tài liệu minh chứng cho công tác (Có thể chọn nhiều tập tin)</label>
                     </div>
                 </div>
                 <br/><br/><br/>
             </div>
             <div class="col-xs-12 col-sm-12 col-md-12">
-                <h3>Hình Ảnh</h3>
+                <h3>Hình ảnh minh chứng</h3>
                 <div class="input-group mt-3">
                     <div class="custom-file">
                         <input id="inputGroupFile02" name="photos[]" type="file" multiple class="custom-file-input">
-                        <label class="custom-file-label" for="inputGroupFile02">Chọn file hình ảnh minh chứng</label>
+                        <label class="custom-file-label" for="inputGroupFile02">Chọn hình ảnh minh chứng cho công tác (Có thể chọn nhiều tập tin)</label>
                     </div>
                 </div>
                 <br/><br/><br/>
@@ -74,96 +80,23 @@
         .ck-editor__editable {
             min-height: 400px;
         }
-
-        .list-user {
-            background: #cddeff;
-            display: inline-block;
-            margin: 5px;
-            padding: 5px;
-            border-radius: 5px;
-        }
-
-        .list-user:after {
-            padding-left: 5px;
-            content: 'x';
-            font-weight: bold;
-            font-size: large;
-        }
-
-        .list-user:hover:after {
-            color: red;
-        }
     </style>
 @endpush
 
 @push('scripts')
-    <script src="https://cdn.jsdelivr.net/npm/bs-custom-file-input/dist/bs-custom-file-input.min.js"></script>
     <script src="/assets/libs/ckeditor5-build-classic/ckeditor.js"></script>
-    <script src="/js/typeahead.bundle.min.js"></script>
+    <script src="/assets/libs/ckeditor5-build-classic/translations/vi.js"></script>
     <script>
-
-        var users = [];
-
-        function addUserInvite(user) {
-            users.push(user.id);
-            $("#list-invate").append("<li class='list-user' onclick='removeUser();'>" + user.name + "</li>");
-            document.getElementById("invite").value = users;
-        }
-
-        function removeUser()
-        {
-            //alert("hihi");
-        }
-
-        $(document).ready(function () {
-            bsCustomFileInput.init();
-            ClassicEditor
-                .create( document.querySelector( '#editor' ), {
-                    // toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ]
-                } )
-                .then( editor => {
-                    window.editor = editor;
-                } )
-                .catch( err => {
-                    console.error( err.stack );
-                } );
-
-
-
-            var engine = new Bloodhound({
-                remote: {
-                    url: '/search/name?value=%QUERY%',
-                    wildcard: '%QUERY%'
-                },
-                datumTokenizer: Bloodhound.tokenizers.whitespace('value'),
-                queryTokenizer: Bloodhound.tokenizers.whitespace
-            });
-
-            $(".search-invite").typeahead({
-                hint: true,
-                highlight: true,
-                minLength: 1
-            }, {
-                    source: engine.ttAdapter(),
-                    name: 'invite-name',
-                    display: function(data) {
-                        return '';
-                    },
-                    templates: {
-                        empty: [
-                            '<div class="header-title">...</div><div class="list-group search-results-dropdown"><div class="list-group-item">Không tìm thấy</div></div>'
-                        ],
-                        header: [
-                            '<div class="header-title">Có phải là: </div><div class="list-group search-results-dropdown"></div>'
-                        ],
-                        suggestion: function (data) {
-                            return `<a href="#div_invite" onclick='addUserInvite(` + JSON.stringify(data) + `);' class="list-group-item">` + data.name + `</a>`;
-                        }
-                    }
-                }
-            );
-
-
-        });
+        ClassicEditor
+            .create( document.querySelector( '#editor' ), {
+                //toolbar: [ 'heading', '|', 'bold', 'italic', 'link' ],
+                language: 'vi'
+            } )
+            .then( editor => {
+                window.editor = editor;
+            } )
+            .catch( err => {
+                console.error( err.stack );
+            } );
     </script>
 @endpush
