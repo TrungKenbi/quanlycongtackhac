@@ -5,18 +5,19 @@
 <div class="container-fluid">
     <div class="row">
         <div class="col-lg-12 margin-tb" style="padding-bottom: 10px">
-            <div class="pull-right">
-                @can('otherwork-create')
-                    <a class="btn btn-success" href="{{ route('otherworks.create') }}"> Tạo Công Tác</a>
-                @endcan
-
-                @can('otherwork-export')
-                    <a class="btn btn-info" href="{{ route('otherworks.export') }}"> Xuất Excel</a>
-                @endcan
-
+            <div class="form-group float-center">
+                <div class="header-search">
+                    <form method="POST" id="header-search">
+                        <input class="form-control m-input" type="text"name="search" placeholder="Tìm kiếm công tác ???">
+                        @csrf
+                    </form>
+                </div>
+                <div id="search-suggest" class="s-suggest"></div>
             </div>
         </div>
     </div>
+
+
 
 
     @if ($message = Session::get('success'))
@@ -35,14 +36,11 @@
         }
     </style>
 
-    <div class="text-center">
-        <h3>Đã tham gia {{ $otherworksCount }} công tác và tích luỹ được <b>{{ $otherworksPointSum }}</b> giờ</h3>
-    </div>
-
     <div class="table-responsive">
         <table class="table table-bordered">
             <tr>
-                <th>STT</th>
+                <th>#</th>
+                <th>Giảng Viên</th>
                 <th>Tên Công Tác</th>
                 <th>Định mức</th>
                 <th>Số lượng</th>
@@ -51,7 +49,8 @@
             </tr>
             @foreach ($otherworks as $otherwork)
                 <tr>
-                    <td>{{ ++$i }}</td>
+                    <td>{{ $otherwork->id }}</td>
+                    <td><b style="text-transform: uppercase;">{{ $otherwork->getUser->name }}</b></td>
                     <td>
                         <a href="{{ route('otherworks.show', $otherwork->id) }}" class="title-otherwork">
                             <b style="text-transform: uppercase;">{{ $otherwork->name }}</b>
@@ -78,9 +77,30 @@
             @endforeach
         </table>
     </div>
-
     <div class="d-flex justify-content-center">
         {!! $otherworks->links() !!}
     </div>
 </div>
 @endsection
+
+
+@push('scripts')
+    <script type="text/javascript">
+        $('#header-search').on('keyup', function() {
+            var search = $(this).serialize();
+            if ($(this).find('.m-input').val() == '') {
+                $('#search-suggest div').hide();
+            } else {
+                $.ajax({
+                    url: '{{ route('otherworks-management.search') }}',
+                    type: 'POST',
+                    data: search,
+                })
+                    .done(function(res) {
+                        $('#search-suggest').html('');
+                        $('#search-suggest').append(res)
+                    })
+            };
+        });
+    </script>
+@endpush

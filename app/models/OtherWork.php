@@ -3,9 +3,11 @@
 namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
+use App\Http\Traits\FullTextSearchTrait;
 
 class OtherWork extends Model
 {
+    use FullTextSearchTrait;
     /**
      * The attributes that are mass assignable.
      *
@@ -48,5 +50,13 @@ class OtherWork extends Model
     {
         return $this->hasMany('App\Models\OtherWorkFile')
             ->where('other_work_files.type', '=', 'photo');
+    }
+
+    /*
+     * Lấy thông tin user của công tác
+     * */
+    public function getUser()
+    {
+        return $this->belongsTo('App\Models\User', 'user_id');
     }
 }

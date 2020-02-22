@@ -35,6 +35,17 @@ Route::group(['middleware' => ['auth']], function() {
     });
 
 
+    Route::get('otherworks-management','OtherWorkManagementController@index')
+        ->name('otherworks-management.index');
+
+    Route::group(['prefix' => 'otherworks-management'], function () {
+        Route::get('report-user','OtherWorkManagementController@reportUser')
+            ->name('otherworks-management.reportUser');
+        Route::post('search','OtherWorkManagementController@search')
+            ->name('otherworks-management.search');
+    });
+
+
 
     /*
     Route::get('files', function () {

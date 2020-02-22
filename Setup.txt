@@ -1,6 +1,8 @@
 # Prerun
+composer install --optimize-autoloader --no-dev
 artisan migrate:fresh --seed
 artisan storage:link
 artisan config:cache
+artisan route:cache
 # Run
 artisan serve

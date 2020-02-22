@@ -27,4 +27,5 @@ return [
     'otherwork-edit'   => 'Sửa Công Tác Khác',
     'otherwork-delete' => 'Xóa Công Tác Khác',
     'otherwork-export' => 'Xuất Công Tác Khác',
+    'otherwork-management' => 'Quản Lý Công Tác Khác',
 ];

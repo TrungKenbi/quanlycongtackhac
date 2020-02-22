@@ -5,7 +5,7 @@ use Illuminate\Database\Seeder;
 use Spatie\Permission\Models\Permission;
 
 
-class PermissionTableSeeder extends Seeder
+class PermissionsTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -27,7 +27,8 @@ class PermissionTableSeeder extends Seeder
             'otherwork-create',
             'otherwork-edit',
             'otherwork-delete',
-            'otherwork-export'
+            'otherwork-export',
+            'otherwork-management',
         ];
 
 
