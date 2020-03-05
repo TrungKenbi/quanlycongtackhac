@@ -49,4 +49,14 @@ class User extends Authenticatable
     {
         return $this->hasMany('App\Models\OtherWork');
     }
+
+    public function getHourWork()
+    {
+        $hourWork = 0;
+        $otherworks = $this->getOtherWorks()->get();
+        foreach ($otherworks as $otherwork)
+            $hourWork += $otherwork->norm * $otherwork->count * (103 / 320);
+        $hourWork = (int) $hourWork;
+        return $hourWork;
+    }
 }

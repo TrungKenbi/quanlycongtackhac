@@ -96,10 +96,10 @@
                     type: 'POST',
                     data: search,
                 })
-                    .done(function(res) {
-                        $('#search-suggest').html('');
-                        $('#search-suggest').append(res)
-                    })
+                .done(function(res) {
+                    $('#search-suggest').html('');
+                    $('#search-suggest').append(res)
+                })
             };
         });
     </script>

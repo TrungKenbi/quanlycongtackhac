@@ -42,7 +42,7 @@ class OtherWorkController extends Controller
      */
     public function index()
     {
-        $otherworks = OtherWork::where('user_id', \Auth::id())->get();
+        $otherworks = OtherWork::where('user_id', \Auth::id())->get(['norm', 'count']);
 
         $otherworksCount = 0;
         $otherworksPointSum = 0;

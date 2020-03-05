@@ -2,29 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1425b802-6f41-4b73-861f-a0638bc96b62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkManagementController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Traits/FullTextSearchTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2020_02_22_231309_add_full_text_search.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/otherworks-management/index.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/otherworks-management/report/user.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/otherworks-management/search.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Setup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Setup.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exceptions/Handler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exceptions/Handler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/OtherWork.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OtherWork.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PermissionsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/dist/css/style.min.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/lang/vi/permission.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/lang/vi/permission.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/403.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/403.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/405.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/405.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/errors/500.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/errors/500.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks-management/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks-management/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks-management/report/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks-management/report/user.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -322,6 +304,7 @@
       <workItem from="1580740206286" duration="162000" />
       <workItem from="1581667740131" duration="21240000" />
       <workItem from="1582376355976" duration="14533000" />
+      <workItem from="1582431854310" duration="6209000" />
     </task>
     <servers />
   </component>
