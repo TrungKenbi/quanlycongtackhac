@@ -2,11 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1425b802-6f41-4b73-861f-a0638bc96b62" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/quanlycongtackhac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quanlycongtackhac.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Setup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Setup.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/models/OtherWork.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OtherWork.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/otherworks-management/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks-management/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/otherworks-management/report/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks-management/report/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,13 +89,11 @@
       <path value="$PROJECT_DIR$/vendor/monolog/monolog" />
       <path value="$PROJECT_DIR$/vendor/mockery/mockery" />
       <path value="$PROJECT_DIR$/vendor/fideloper/proxy" />
-      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-highlighter" />
       <path value="$PROJECT_DIR$/vendor/symfony/console" />
       <path value="$PROJECT_DIR$/vendor/jakub-onderka/php-console-color" />
       <path value="$PROJECT_DIR$/vendor/symfony/process" />
       <path value="$PROJECT_DIR$/vendor/symfony/debug" />
-      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/vendor/symfony/mime" />
       <path value="$PROJECT_DIR$/vendor/paragonie/random_compat" />
       <path value="$PROJECT_DIR$/vendor/symfony/polyfill-iconv" />
@@ -183,6 +191,10 @@
       <path value="$PROJECT_DIR$/vendor/maatwebsite/excel" />
       <path value="$PROJECT_DIR$/vendor/markbaker/matrix" />
       <path value="$PROJECT_DIR$/vendor/markbaker/complex" />
+      <path value="$PROJECT_DIR$/vendor/symfony/error-handler" />
+      <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
+      <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
+      <path value="$PROJECT_DIR$/vendor/mossadal/math-parser" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Oo5BBACyU8TOXvlHPceNIgRHeQ" />
@@ -203,7 +215,7 @@
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/otherworks-management" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PHP/Laravel/chat-app" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
@@ -305,6 +317,10 @@
       <workItem from="1581667740131" duration="21240000" />
       <workItem from="1582376355976" duration="14533000" />
       <workItem from="1582431854310" duration="6209000" />
+      <workItem from="1584719175496" duration="801000" />
+      <workItem from="1584720112855" duration="1352000" />
+      <workItem from="1584947002901" duration="2187000" />
+      <workItem from="1586780502798" duration="8672000" />
     </task>
     <servers />
   </component>
@@ -340,13 +356,27 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1582382175029" />
-    <state x="822" y="145" key="FileChooserDialogImpl" timestamp="1580740366565">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="371" y="99" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586792911080">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="371" y="99" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1586792911080" />
+    <state x="551" y="238" key="#com.jetbrains.php.framework.ui.FailedToParseDialog" timestamp="1584947447814">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="551" y="238" key="#com.jetbrains.php.framework.ui.FailedToParseDialog/0.0.1280.680@0.0.1280.680" timestamp="1584947447814" />
+    <state x="338" y="26" width="618" height="628" key="#phpunit.xml" timestamp="1584719542224">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="338" y="26" width="618" height="628" key="#phpunit.xml/0.0.1280.680@0.0.1280.680" timestamp="1584719542224" />
+    <state x="770" y="135" key="FileChooserDialogImpl" timestamp="1584949635231">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="770" y="135" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584949635231" />
     <state x="822" y="145" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580740366565" />
-    <state x="543" y="263" key="FrameworkEditDialogDimensionKey" timestamp="1580002023302">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="509" y="246" key="FrameworkEditDialogDimensionKey" timestamp="1584947380761">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="509" y="246" key="FrameworkEditDialogDimensionKey/0.0.1280.680@0.0.1280.680" timestamp="1584947380761" />
     <state x="543" y="263" key="FrameworkEditDialogDimensionKey/0.0.1366.728@0.0.1366.728" timestamp="1580002023302" />
     <state width="1323" height="255" key="GridCell.Tab.0.bottom" timestamp="1582391355432">
       <screen x="0" y="0" width="1366" height="728" />
@@ -368,17 +398,20 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="262" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1580740346735" />
-    <state x="186" y="10" key="SettingsEditor" timestamp="1580002106383">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="174" y="0" key="SettingsEditor" timestamp="1584947450624">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="174" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1584947450624" />
     <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580002106383" />
-    <state x="439" y="230" key="SymfonyComponentCompositeDataDialog" timestamp="1580002101449">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="411" y="215" key="SymfonyComponentCompositeDataDialog" timestamp="1584947429608">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="411" y="215" key="SymfonyComponentCompositeDataDialog/0.0.1280.680@0.0.1280.680" timestamp="1584947429608" />
     <state x="439" y="230" key="SymfonyComponentCompositeDataDialog/0.0.1366.728@0.0.1366.728" timestamp="1580002101449" />
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog" timestamp="1580001062261">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="366" y="180" key="com.intellij.ide.util.TipDialog" timestamp="1584719176865">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="366" y="180" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584719176865" />
     <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580001062261" />
     <state x="245" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582386292977">
       <screen x="0" y="0" width="1366" height="728" />

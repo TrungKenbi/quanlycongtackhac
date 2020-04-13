@@ -31,6 +31,13 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
+                <strong>Công thức tính công tác:</strong>
+                {!! Form::text('formula', null, array('placeholder' => 'Công thức tính công tác', 'class' => 'form-control')) !!}
+                <small><b>{norm}</b>: Định mức, <b>{count}</b>: Số lượng</small>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
                 <strong>Mật khẩu:</strong>
                 {!! Form::password('password', array('placeholder' => 'Mật khẩu','class' => 'form-control')) !!}
             </div>
@@ -44,7 +51,7 @@
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
                 <strong>Chức vụ:</strong>
-                {!! Form::select('roles[]', $roles,$userRole, array('class' => 'form-control','multiple')) !!}
+                {!! Form::select('roles[]', $roles, $userRole, array('class' => 'form-control','multiple')) !!}
             </div>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 text-center">

@@ -4,6 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Http\Traits\FullTextSearchTrait;
+use MathParser\StdMathParser;
+use MathParser\Interpreting\Evaluator;
+
 
 class OtherWork extends Model
 {
@@ -58,5 +61,20 @@ class OtherWork extends Model
     public function getUser()
     {
         return $this->belongsTo('App\Models\User', 'user_id');
+    }
+
+
+    /**
+     * Tính điểm công tác
+     *
+     * @return float
+     */
+    public function getTotalPointAttribute()
+    {
+        return formulaPoint(
+            $this->getUser->formula,
+            $this->attributes['norm'],
+            $this->attributes['count']
+        );
     }
 }

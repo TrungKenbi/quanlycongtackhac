@@ -50,7 +50,8 @@ class OtherWorkController extends Controller
         foreach ($otherworks as $otherwork)
         {
             $otherworksCount++;
-            $otherworksPointSum += $otherwork->norm * $otherwork->count * (103 / 320);
+            //$otherworksPointSum += $otherwork->norm * $otherwork->count * (103 / 320);
+            $otherworksPointSum += formulaPoint(Auth::user()->formula, $otherwork->norm, $otherwork->count);
         }
 
         $otherworksPointSum = intval($otherworksPointSum);

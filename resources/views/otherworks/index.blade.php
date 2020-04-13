@@ -59,7 +59,7 @@
                     </td>
                     <td><b style="text-transform: uppercase;">{{ $otherwork->norm }}</b></td>
                     <td><b style="text-transform: uppercase;">{{ $otherwork->count }}</b></td>
-                    <td><b style="text-transform: uppercase;">{{ $otherwork->norm*$otherwork->count*(103/320) }}</b></td>
+                    <td><b style="text-transform: uppercase;">{{ $otherwork->total_point }}</b></td>
                     <td>
                         <form action="{{ route('otherworks.destroy',$otherwork->id) }}" method="POST">
                             <a class="btn btn-info" href="{{ route('otherworks.show', $otherwork->id) }}">Xem</a>

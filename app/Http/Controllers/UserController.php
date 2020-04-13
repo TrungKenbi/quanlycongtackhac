@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\User;
+use Illuminate\Support\Arr;
 use Spatie\Permission\Models\Role;
 use DB;
 use Hash;
@@ -123,17 +124,23 @@ class UserController extends Controller
             'name' => 'required',
             'email' => 'required|email|unique:users,email,' . $id,
             'password' => 'same:confirm-password',
+            'formula' => 'required',
             'roles' => 'required'
         ]);
 
+        $input = $request->only([
+            'name',
+            'email',
+            'password',
+            'formula',
+            'roles'
+        ]);
 
-        $input = $request->all();
         if (!empty($input['password'])) {
             $input['password'] = Hash::make($input['password']);
         } else {
-            $input = array_except($input, array('password'));
+            $input = Arr::except($input, ['password']);
         }
-
 
         $user = User::find($id);
         $user->update($input);
@@ -143,7 +150,7 @@ class UserController extends Controller
         $user->assignRole($request->input('roles'));
 
 
-        return redirect()->route('users.index')
+        return redirect()->route('users.edit', $id)
             ->with('success', 'Sửa thông tin thành công !');
     }
 
