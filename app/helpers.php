@@ -11,9 +11,9 @@ use MathParser\StdMathParser;
  *
  * @return float
  */
-if (!function_exists('formulaPoint'))
+if (!function_exists('pointCalculation'))
 {
-    function formulaPoint($formula, $norm, $count)
+    function pointCalculation($formula, $norm, $count)
     {
         $formulaHandle = str_replace('{norm}', $norm, $formula);
         $formulaHandle = str_replace('{count}', $count, $formulaHandle);

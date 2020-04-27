@@ -18,6 +18,18 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
+                <strong>Công thức tính giờ công tác:</strong>
+                {{ $user->formula }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
+                <strong>Chỉ tiêu số giờ công tác:</strong>
+                {{ $user->target_point }}
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
                 <strong>Chức vụ:</strong>
                 @if(!empty($user->getRoleNames()))
                     @foreach($user->getRoleNames() as $v)

@@ -24,7 +24,7 @@ class OtherWork extends Model
         'count',
     ];
 
-    protected $dates = ['created_at', 'updated_at'];
+    protected $dates = ['worked_at', 'created_at', 'updated_at'];
 
     /**
      * Scope a query to only include popular users.
@@ -71,7 +71,7 @@ class OtherWork extends Model
      */
     public function getTotalPointAttribute()
     {
-        return formulaPoint(
+        return pointCalculation(
             $this->getUser->formula,
             $this->attributes['norm'],
             $this->attributes['count']

@@ -2,21 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1425b802-6f41-4b73-861f-a0638bc96b62" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/quanlycongtackhac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quanlycongtackhac.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Exports/OtherWorksAllExport.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Helpers/General/CollectionHelper.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/exports/otherworksall.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/otherworks-management/report/department.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Setup.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Setup.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Exports/OtherWorksExport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exports/OtherWorksExport.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkManagementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkManagementController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/OtherWork.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OtherWork.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_27_140833_create_other_works_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_27_140833_create_other_works_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/exports/otherworks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exports/otherworks.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/otherworks-management/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks-management/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks-management/report/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks-management/report/user.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/create.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/roles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/roles/create.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,22 +224,23 @@
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../PHP/Laravel/chat-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/exports" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php.zend.framework.tool" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\XAMPP-7.3\htdocs\quanlycongtackhac\app\models" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Code\NCKH\resources\views\exports" />
       <recent name="D:\Code\NCKH\resources\views\otherworks-management" />
       <recent name="D:\Code\NCKH" />
       <recent name="D:\XAMPP-7.3\htdocs\quanlycongtackhac\public\dist\js" />
       <recent name="D:\XAMPP-7.3\htdocs\quanlycongtackhac\resources\lang" />
-      <recent name="D:\XAMPP-7.3\htdocs\quanlycongtackhac\resources\views\products" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\XAMPP-7.3\htdocs\quanlycongtackhac\app\models" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -243,7 +253,6 @@
       <command value="artisan migrate rename_table" />
       <command value="artisan make:model WorkUser -m" />
       <command value="artisan key:generate" />
-      <command value="artisan serve" />
       <command value="artisan list" />
       <command value="artisan make:mail NewUserNotification" />
       <command value="storage:link" />
@@ -253,6 +262,7 @@
       <command value="artisan make:controller OtherWorkManagement" />
       <command value="artisan make:migration AddFullTextSearch" />
       <command value="artisan migrate" />
+      <command value="artisan serve" />
     </option>
   </component>
   <component name="RunManager">
@@ -321,6 +331,13 @@
       <workItem from="1584720112855" duration="1352000" />
       <workItem from="1584947002901" duration="2187000" />
       <workItem from="1586780502798" duration="8672000" />
+      <workItem from="1586832119342" duration="588000" />
+      <workItem from="1586872251293" duration="954000" />
+      <workItem from="1587012795989" duration="13884000" />
+      <workItem from="1587478191673" duration="953000" />
+      <workItem from="1587480626856" duration="337000" />
+      <workItem from="1587729984399" duration="133000" />
+      <workItem from="1587974221954" duration="5133000" />
     </task>
     <servers />
   </component>
@@ -356,52 +373,60 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1582382175029" />
-    <state x="371" y="99" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1586792911080">
+    <state x="371" y="99" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587021056170">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="371" y="99" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1586792911080" />
+    <state x="371" y="99" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587021056170" />
     <state x="551" y="238" key="#com.jetbrains.php.framework.ui.FailedToParseDialog" timestamp="1584947447814">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="551" y="238" key="#com.jetbrains.php.framework.ui.FailedToParseDialog/0.0.1280.680@0.0.1280.680" timestamp="1584947447814" />
-    <state x="338" y="26" width="618" height="628" key="#phpunit.xml" timestamp="1584719542224">
+    <state x="338" y="26" width="618" height="628" key="#phpunit.xml" timestamp="1587974230206">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="338" y="26" width="618" height="628" key="#phpunit.xml/0.0.1280.680@0.0.1280.680" timestamp="1584719542224" />
-    <state x="770" y="135" key="FileChooserDialogImpl" timestamp="1584949635231">
+    <state x="338" y="26" width="618" height="628" key="#phpunit.xml/0.0.1280.680@0.0.1280.680" timestamp="1587974230206" />
+    <state x="393" y="201" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1587019245449">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="770" y="135" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1584949635231" />
+    <state x="393" y="201" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1587019245449" />
+    <state x="770" y="135" key="FileChooserDialogImpl" timestamp="1587730115571">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="770" y="135" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587730115571" />
     <state x="822" y="145" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580740366565" />
     <state x="509" y="246" key="FrameworkEditDialogDimensionKey" timestamp="1584947380761">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="509" y="246" key="FrameworkEditDialogDimensionKey/0.0.1280.680@0.0.1280.680" timestamp="1584947380761" />
     <state x="543" y="263" key="FrameworkEditDialogDimensionKey/0.0.1366.728@0.0.1366.728" timestamp="1580002023302" />
-    <state width="1323" height="255" key="GridCell.Tab.0.bottom" timestamp="1582391355432">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1587974465727">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587974465727" />
     <state width="1323" height="255" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1323" height="255" key="GridCell.Tab.0.center" timestamp="1582391355432">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1587974465727">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587974465727" />
     <state width="1323" height="255" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1323" height="255" key="GridCell.Tab.0.left" timestamp="1582391355432">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1587974465727">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587974465727" />
     <state width="1323" height="255" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1323" height="255" key="GridCell.Tab.0.right" timestamp="1582391355432">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1587974465727">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587974465727" />
     <state width="1323" height="255" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
     <state width="262" height="457" key="HiddenNamespacesPopup" timestamp="1580740346735">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state width="262" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1580740346735" />
-    <state x="174" y="0" key="SettingsEditor" timestamp="1584947450624">
+    <state x="174" y="0" key="SettingsEditor" timestamp="1587478358376">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="174" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1584947450624" />
+    <state x="174" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587478358376" />
     <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580002106383" />
     <state x="411" y="215" key="SymfonyComponentCompositeDataDialog" timestamp="1584947429608">
       <screen x="0" y="0" width="1280" height="680" />
@@ -417,13 +442,15 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="245" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1582386292977" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup" timestamp="1582388197846">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="318" y="151" width="672" height="633" key="run.anything.popup" timestamp="1587974235639">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="318" y="151" width="672" height="633" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1587974235639" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1582388197846" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1581675834862">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="324" y="46" width="672" height="634" key="search.everywhere.popup" timestamp="1587478476253">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="324" y="46" width="672" height="634" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587478476253" />
     <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1581675834862" />
   </component>
 </project>

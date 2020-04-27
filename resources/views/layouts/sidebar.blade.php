@@ -22,8 +22,8 @@
                     <ul aria-expanded="false" class="collapse first-level">
                         <li class="sidebar-item"><a href="{{ route('otherworks-management.index') }}" class="sidebar-link"><i class="mdi mdi-clipboard"></i><span class="hide-menu">Xem Các Công Tác</span></a></li>
                         <li class="sidebar-item"><a href="{{ route('otherworks-management.reportUser') }}" class="sidebar-link"><i class="mdi mdi-account"></i><span class="hide-menu">Báo Cáo Theo Giảng Viên</span></a></li>
-                        <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-group"></i><span class="hide-menu">Báo Cáo Theo Khoa</span></a></li>
-                        <li class="sidebar-item"><a href="#" class="sidebar-link"><i class="mdi mdi-file-export"></i><span class="hide-menu">Xuất Báo Cáo</span></a></li>
+                        <li class="sidebar-item"><a href="{{ route('otherworks-management.reportDepartment') }}" class="sidebar-link"><i class="mdi mdi-group"></i><span class="hide-menu">Báo Cáo Theo Khoa</span></a></li>
+                        <li class="sidebar-item"><a href="{{ route('otherworks-management.export') }}" class="sidebar-link"><i class="mdi mdi-file-export"></i><span class="hide-menu">Xuất Báo Cáo</span></a></li>
 
                     </ul>
                 </li>

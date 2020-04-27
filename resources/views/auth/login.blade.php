@@ -84,7 +84,7 @@
             </div>
             <div id="recoverform">
                 <div class="text-center">
-                    <span class="text-white">Enter your e-mail address below and we will send you instructions how to recover a password.</span>
+                    <span class="text-white">Nhập địa chỉ email của bạn dưới đây và chúng tôi sẽ gửi cho bạn hướng dẫn cách khôi phục mật khẩu.</span>
                 </div>
                 <div class="row m-t-20">
                     <!-- Form -->
@@ -94,13 +94,13 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text bg-danger text-white" id="basic-addon1"><i class="ti-email"></i></span>
                             </div>
-                            <input type="text" class="form-control form-control-lg" placeholder="Email Address" aria-label="Username" aria-describedby="basic-addon1">
+                            <input type="text" class="form-control form-control-lg" placeholder="Địa chỉ Email" aria-label="Username" aria-describedby="basic-addon1">
                         </div>
                         <!-- pwd -->
                         <div class="row m-t-20 p-t-20 border-top border-secondary">
                             <div class="col-12">
-                                <a class="btn btn-success" href="#" id="to-login" name="action">Back To Login</a>
-                                <button class="btn btn-info float-right" type="button" name="action">Recover</button>
+                                <a class="btn btn-success" href="#" id="to-login" name="action">Quay lại</a>
+                                <button class="btn btn-info float-right" type="button" name="action">Khôi phục</button>
                             </div>
                         </div>
                     </form>

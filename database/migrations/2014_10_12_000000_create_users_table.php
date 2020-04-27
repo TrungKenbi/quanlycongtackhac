@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('formula')->default('{norm}*{count}*103/320');
+            $table->integer('target_point')->default(100);
             $table->string('password');
             $table->rememberToken();
             $table->timestamps();

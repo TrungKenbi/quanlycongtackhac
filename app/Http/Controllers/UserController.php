@@ -125,6 +125,7 @@ class UserController extends Controller
             'email' => 'required|email|unique:users,email,' . $id,
             'password' => 'same:confirm-password',
             'formula' => 'required',
+            'target_point' => 'required',
             'roles' => 'required'
         ]);
 
@@ -133,6 +134,7 @@ class UserController extends Controller
             'email',
             'password',
             'formula',
+            'target_point',
             'roles'
         ]);
 

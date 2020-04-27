@@ -42,7 +42,7 @@ class OtherWorkController extends Controller
      */
     public function index()
     {
-        $otherworks = OtherWork::where('user_id', \Auth::id())->get(['norm', 'count']);
+        $otherworks = Auth::user()->otherworks()->get(['norm', 'count']);
 
         $otherworksCount = 0;
         $otherworksPointSum = 0;
@@ -50,13 +50,11 @@ class OtherWorkController extends Controller
         foreach ($otherworks as $otherwork)
         {
             $otherworksCount++;
-            //$otherworksPointSum += $otherwork->norm * $otherwork->count * (103 / 320);
-            $otherworksPointSum += formulaPoint(Auth::user()->formula, $otherwork->norm, $otherwork->count);
+            $otherworksPointSum += pointCalculation(Auth::user()->formula, $otherwork->norm, $otherwork->count);
         }
 
         $otherworksPointSum = intval($otherworksPointSum);
-
-        $otherworks = OtherWork::where('user_id', \Auth::id())->latest()->paginate(5);
+        $otherworks = Auth::user()->otherworks()->latest()->paginate(5);
 
 
         return view('otherworks.index', compact(

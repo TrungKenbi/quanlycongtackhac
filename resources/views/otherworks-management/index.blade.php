@@ -50,10 +50,10 @@
             @foreach ($otherworks as $otherwork)
                 <tr>
                     <td>{{ $otherwork->id }}</td>
-                    <td><b style="text-transform: uppercase;">{{ $otherwork->getUser->name }}</b></td>
+                    <td><b>{{ $otherwork->getUser->name }}</b></td>
                     <td>
                         <a href="{{ route('otherworks.show', $otherwork->id) }}" class="title-otherwork">
-                            <b style="text-transform: uppercase;">{{ $otherwork->name }}</b>
+                            <b>{{ $otherwork->name }}</b>
                         </a>
                     </td>
                     <td><b style="text-transform: uppercase;">{{ $otherwork->norm }}</b></td>

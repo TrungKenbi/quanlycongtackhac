@@ -38,6 +38,13 @@
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12">
             <div class="form-group">
+                <strong>Chỉ tiêu số giờ công tác:</strong>
+                {!! Form::text('target_point', null, array('placeholder' => 'Chỉ tiêu số giờ công tác', 'class' => 'form-control')) !!}
+                <small>Số giờ công tác cần đạt trong năm</small>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12">
+            <div class="form-group">
                 <strong>Mật khẩu:</strong>
                 {!! Form::password('password', array('placeholder' => 'Mật khẩu','class' => 'form-control')) !!}
             </div>

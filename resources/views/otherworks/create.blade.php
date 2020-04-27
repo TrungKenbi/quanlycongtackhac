@@ -15,7 +15,7 @@
     @endif
 
 
-    <form action="{{ route('otherworks.store') }}" enctype="multipart/form-data" method="POST">
+    <form class="form-horizontal" action="{{ route('otherworks.store') }}" enctype="multipart/form-data" method="POST">
         @csrf
 
         <div class="row">

@@ -22,6 +22,7 @@ class CreateOtherWorksTable extends Migration
             $table->text('detail');
             $table->integer('norm')->default(0); // Định mức
             $table->integer('count')->default(0); // Số lượng
+            $table->timestamp('worked_at')->nullable();
             $table->timestamps();
         });
     }
