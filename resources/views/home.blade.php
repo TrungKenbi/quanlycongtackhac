@@ -15,7 +15,7 @@
 
 @section('content')
 <div class="container-fluid">
-    {{--<!-- ============================================================== -->
+    <!-- ============================================================== -->
     <!-- Sales Cards  -->
     <!-- ============================================================== -->
     <div class="row">
@@ -24,7 +24,7 @@
             <div class="card card-hover">
                 <div class="box bg-cyan text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-view-dashboard"></i></h1>
-                    <h6 class="text-white">Dashboard</h6>
+                    <h6 class="text-white">Bảng Điều Khiển</h6>
                 </div>
             </div>
         </div>
@@ -33,7 +33,7 @@
             <div class="card card-hover">
                 <div class="box bg-success text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-chart-areaspline"></i></h1>
-                    <h6 class="text-white">Charts</h6>
+                    <h6 class="text-white">Danh sách công tác</h6>
                 </div>
             </div>
         </div>
@@ -42,7 +42,7 @@
             <div class="card card-hover">
                 <div class="box bg-warning text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-collage"></i></h1>
-                    <h6 class="text-white">Widgets</h6>
+                    <h6 class="text-white">Thêm Công Tác</h6>
                 </div>
             </div>
         </div>
@@ -51,7 +51,7 @@
             <div class="card card-hover">
                 <div class="box bg-danger text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-border-outside"></i></h1>
-                    <h6 class="text-white">Tables</h6>
+                    <h6 class="text-white">Xuất báo cáo</h6>
                 </div>
             </div>
         </div>
@@ -60,7 +60,7 @@
             <div class="card card-hover">
                 <div class="box bg-info text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-arrow-all"></i></h1>
-                    <h6 class="text-white">Full Width</h6>
+                    <h6 class="text-white">Tìm kiếm công tác</h6>
                 </div>
             </div>
         </div>
@@ -70,7 +70,7 @@
             <div class="card card-hover">
                 <div class="box bg-danger text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-receipt"></i></h1>
-                    <h6 class="text-white">Forms</h6>
+                    <h6 class="text-white">Phân quyền người dùng</h6>
                 </div>
             </div>
         </div>
@@ -79,7 +79,7 @@
             <div class="card card-hover">
                 <div class="box bg-info text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-relative-scale"></i></h1>
-                    <h6 class="text-white">Buttons</h6>
+                    <h6 class="text-white">Quản lý người dùng</h6>
                 </div>
             </div>
         </div>
@@ -88,7 +88,7 @@
             <div class="card card-hover">
                 <div class="box bg-cyan text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-pencil"></i></h1>
-                    <h6 class="text-white">Elements</h6>
+                    <h6 class="text-white">Xuất báo cáo theo giảng viên</h6>
                 </div>
             </div>
         </div>
@@ -97,7 +97,7 @@
             <div class="card card-hover">
                 <div class="box bg-success text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-calendar-check"></i></h1>
-                    <h6 class="text-white">Calnedar</h6>
+                    <h6 class="text-white">Xuất báo cáo theo khoa</h6>
                 </div>
             </div>
         </div>
@@ -106,12 +106,12 @@
             <div class="card card-hover">
                 <div class="box bg-warning text-center">
                     <h1 class="font-light text-white"><i class="mdi mdi-alert"></i></h1>
-                    <h6 class="text-white">Errors</h6>
+                    <h6 class="text-white">Xuất báo cáo chung</h6>
                 </div>
             </div>
         </div>
         <!-- Column -->
-    </div>--}}
+    </div>
 
     {{--<!-- ============================================================== -->
     <!-- Sales chart -->

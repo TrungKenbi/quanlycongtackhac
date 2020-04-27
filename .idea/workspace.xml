@@ -2,30 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1425b802-6f41-4b73-861f-a0638bc96b62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Exports/OtherWorksAllExport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Helpers/General/CollectionHelper.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/exports/otherworksall.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/otherworks-management/report/department.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/XayDungWebsiteQuanLyCongTacKhac_DuongLePhuocTrung.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Exports/OtherWorksExport.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Exports/OtherWorksExport.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkManagementController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkManagementController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/OtherWork.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/OtherWork.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/migrations/2019_07_27_140833_create_other_works_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2019_07_27_140833_create_other_works_table.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/exports/otherworks.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/exports/otherworks.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/otherworks-management/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks-management/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/otherworks-management/report/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks-management/report/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/otherworks/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/otherworks/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/roles/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/roles/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/edit.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/edit.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/show.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/show.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -256,13 +235,13 @@
       <command value="artisan list" />
       <command value="artisan make:mail NewUserNotification" />
       <command value="storage:link" />
-      <command value="artisan storage:link" />
       <command value="artisan route:list" />
       <command value="artisan migrate:fresh --seed" />
       <command value="artisan make:controller OtherWorkManagement" />
       <command value="artisan make:migration AddFullTextSearch" />
       <command value="artisan migrate" />
       <command value="artisan serve" />
+      <command value="artisan storage:link" />
     </option>
   </component>
   <component name="RunManager">
@@ -337,7 +316,8 @@
       <workItem from="1587478191673" duration="953000" />
       <workItem from="1587480626856" duration="337000" />
       <workItem from="1587729984399" duration="133000" />
-      <workItem from="1587974221954" duration="5133000" />
+      <workItem from="1587974221954" duration="6400000" />
+      <workItem from="1587997768967" duration="1381000" />
     </task>
     <servers />
   </component>
@@ -399,25 +379,25 @@
     </state>
     <state x="509" y="246" key="FrameworkEditDialogDimensionKey/0.0.1280.680@0.0.1280.680" timestamp="1584947380761" />
     <state x="543" y="263" key="FrameworkEditDialogDimensionKey/0.0.1366.728@0.0.1366.728" timestamp="1580002023302" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1587974465727">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1587998552343">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587974465727" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587998552343" />
     <state width="1323" height="255" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1587974465727">
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1587998552343">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587974465727" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587998552343" />
     <state width="1323" height="255" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1587974465727">
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1587998552343">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587974465727" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587998552343" />
     <state width="1323" height="255" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1587974465727">
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1587998552343">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587974465727" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587998552343" />
     <state width="1323" height="255" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
     <state width="262" height="457" key="HiddenNamespacesPopup" timestamp="1580740346735">
       <screen x="0" y="0" width="1366" height="728" />
@@ -442,10 +422,10 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="245" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1582386292977" />
-    <state x="318" y="151" width="672" height="633" key="run.anything.popup" timestamp="1587974235639">
+    <state x="318" y="151" width="672" height="633" key="run.anything.popup" timestamp="1587998552358">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="318" y="151" width="672" height="633" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1587974235639" />
+    <state x="318" y="151" width="672" height="633" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1587998552358" />
     <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1582388197846" />
     <state x="324" y="46" width="672" height="634" key="search.everywhere.popup" timestamp="1587478476253">
       <screen x="0" y="0" width="1280" height="680" />
