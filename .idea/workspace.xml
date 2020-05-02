@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1425b802-6f41-4b73-861f-a0638bc96b62" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/XayDungWebsiteQuanLyCongTacKhac_DuongLePhuocTrung.docx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XayDungWebsiteQuanLyCongTacKhac_DuongLePhuocTrung.docx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -317,7 +316,7 @@
       <workItem from="1587480626856" duration="337000" />
       <workItem from="1587729984399" duration="133000" />
       <workItem from="1587974221954" duration="6400000" />
-      <workItem from="1587997768967" duration="1381000" />
+      <workItem from="1587997768967" duration="2021000" />
     </task>
     <servers />
   </component>
@@ -379,25 +378,25 @@
     </state>
     <state x="509" y="246" key="FrameworkEditDialogDimensionKey/0.0.1280.680@0.0.1280.680" timestamp="1584947380761" />
     <state x="543" y="263" key="FrameworkEditDialogDimensionKey/0.0.1366.728@0.0.1366.728" timestamp="1580002023302" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1587998552343">
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1588008868354">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1587998552343" />
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588008868354" />
     <state width="1323" height="255" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1587998552343">
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1588008868354">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1587998552343" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588008868354" />
     <state width="1323" height="255" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1587998552343">
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1588008868354">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1587998552343" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588008868354" />
     <state width="1323" height="255" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1587998552343">
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1588008868354">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1587998552343" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588008868354" />
     <state width="1323" height="255" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
     <state width="262" height="457" key="HiddenNamespacesPopup" timestamp="1580740346735">
       <screen x="0" y="0" width="1366" height="728" />
