@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1425b802-6f41-4b73-861f-a0638bc96b62" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/tests/Unit/Http/Controllers/UserControllerTest.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/quanlycongtackhac.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/quanlycongtackhac.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/XayDungWebsiteQuanLyCongTacKhac_DuongLePhuocTrung.docx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/OtherWorkController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/Feature/ExampleTest.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,6 +188,18 @@
       <path value="$PROJECT_DIR$/vendor/symfony/service-contracts" />
       <path value="$PROJECT_DIR$/vendor/egulias/email-validator" />
       <path value="$PROJECT_DIR$/vendor/mossadal/math-parser" />
+      <path value="$PROJECT_DIR$/vendor/php-parallel-lint/php-console-color" />
+      <path value="$PROJECT_DIR$/vendor/php-parallel-lint/php-console-highlighter" />
+      <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
+      <path value="$PROJECT_DIR$/vendor/maennchen/zipstream-php" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-client" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-factory" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-php80" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-normalizer" />
+      <path value="$PROJECT_DIR$/vendor/symfony/http-client-contracts" />
+      <path value="$PROJECT_DIR$/vendor/symfony/deprecation-contracts" />
+      <path value="$PROJECT_DIR$/vendor/myclabs/php-enum" />
+      <path value="$PROJECT_DIR$/vendor/league/mime-type-detection" />
     </include_path>
   </component>
   <component name="ProjectId" id="1Oo5BBACyU8TOXvlHPceNIgRHeQ" />
@@ -190,24 +208,29 @@
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/exports" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -252,6 +275,7 @@
       <method v="2" />
     </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -317,119 +341,26 @@
       <workItem from="1587729984399" duration="133000" />
       <workItem from="1587974221954" duration="6400000" />
       <workItem from="1587997768967" duration="2021000" />
+      <workItem from="1626077810883" duration="4496000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
+            <State />
           </value>
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="275" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1580544389696">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="275" y="26" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1366.728@0.0.1366.728" timestamp="1580544389696" />
-    <state x="347" y="175" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582391221847">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="347" y="175" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728@0.0.1366.728" timestamp="1582391221847" />
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1582382175029">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="437" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1366.728@0.0.1366.728" timestamp="1582382175029" />
-    <state x="371" y="99" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1587021056170">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="371" y="99" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1280.680@0.0.1280.680" timestamp="1587021056170" />
-    <state x="551" y="238" key="#com.jetbrains.php.framework.ui.FailedToParseDialog" timestamp="1584947447814">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="551" y="238" key="#com.jetbrains.php.framework.ui.FailedToParseDialog/0.0.1280.680@0.0.1280.680" timestamp="1584947447814" />
-    <state x="338" y="26" width="618" height="628" key="#phpunit.xml" timestamp="1587974230206">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="338" y="26" width="618" height="628" key="#phpunit.xml/0.0.1280.680@0.0.1280.680" timestamp="1587974230206" />
-    <state x="393" y="201" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1587019245449">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="393" y="201" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1280.680@0.0.1280.680" timestamp="1587019245449" />
-    <state x="770" y="135" key="FileChooserDialogImpl" timestamp="1587730115571">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="770" y="135" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1587730115571" />
-    <state x="822" y="145" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1580740366565" />
-    <state x="509" y="246" key="FrameworkEditDialogDimensionKey" timestamp="1584947380761">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="509" y="246" key="FrameworkEditDialogDimensionKey/0.0.1280.680@0.0.1280.680" timestamp="1584947380761" />
-    <state x="543" y="263" key="FrameworkEditDialogDimensionKey/0.0.1366.728@0.0.1366.728" timestamp="1580002023302" />
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1588008868354">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1588008868354" />
-    <state width="1323" height="255" key="GridCell.Tab.0.bottom/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1588008868354">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1588008868354" />
-    <state width="1323" height="255" key="GridCell.Tab.0.center/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1588008868354">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1588008868354" />
-    <state width="1323" height="255" key="GridCell.Tab.0.left/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1588008868354">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1588008868354" />
-    <state width="1323" height="255" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1582391355432" />
-    <state width="262" height="457" key="HiddenNamespacesPopup" timestamp="1580740346735">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state width="262" height="457" key="HiddenNamespacesPopup/0.0.1366.728@0.0.1366.728" timestamp="1580740346735" />
-    <state x="174" y="0" key="SettingsEditor" timestamp="1587478358376">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="174" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1587478358376" />
-    <state x="186" y="10" key="SettingsEditor/0.0.1366.728@0.0.1366.728" timestamp="1580002106383" />
-    <state x="411" y="215" key="SymfonyComponentCompositeDataDialog" timestamp="1584947429608">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="411" y="215" key="SymfonyComponentCompositeDataDialog/0.0.1280.680@0.0.1280.680" timestamp="1584947429608" />
-    <state x="439" y="230" key="SymfonyComponentCompositeDataDialog/0.0.1366.728@0.0.1366.728" timestamp="1580002101449" />
-    <state x="366" y="180" key="com.intellij.ide.util.TipDialog" timestamp="1584719176865">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="366" y="180" key="com.intellij.ide.util.TipDialog/0.0.1280.680@0.0.1280.680" timestamp="1584719176865" />
-    <state x="391" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1580001062261" />
-    <state x="245" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1582386292977">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="245" y="0" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser/0.0.1366.728@0.0.1366.728" timestamp="1582386292977" />
-    <state x="318" y="151" width="672" height="633" key="run.anything.popup" timestamp="1587998552358">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="318" y="151" width="672" height="633" key="run.anything.popup/0.0.1280.680@0.0.1280.680" timestamp="1587998552358" />
-    <state x="339" y="162" width="672" height="677" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1582388197846" />
-    <state x="324" y="46" width="672" height="634" key="search.everywhere.popup" timestamp="1587478476253">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="324" y="46" width="672" height="634" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1587478476253" />
-    <state x="346" y="49" width="672" height="678" key="search.everywhere.popup/0.0.1366.728@0.0.1366.728" timestamp="1581675834862" />
   </component>
 </project>
